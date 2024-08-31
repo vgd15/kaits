@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="https://kaits.com.br/wp-content/uploads/2021/03/cropped-logotipo-1-e1634616319625.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kaits</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="/img/logo-kaits.png">
+            </div>
+            <div class="menu-desk">
+                <ul>
+                    <li><a href="https://kaits.com.br/blog/">Blog</a></li>
+                    <li><a href="https://kaits.com.br/contato/">Contato</a></li>
+                </ul>
+            </div>
+            <div class="menu-mob">
+                <div class="menu-open">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="https://kaits.com.br/blog/">Blog</a></li>
+                    <li><a href="https://kaits.com.br/contato/">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+       
+    </header>
+    <main>
+        <section class="formulario">
+            <div class="informacoes">
+                <p>
+                    Se quer saber mais sobre o KAITS ou tem alguma dúvida ou sugestão, preencha o formulário ou entre em contato por um de nossos canais. Estamos sempre prontos para ouvir você. 
+                </p>
+                <ul>
+                    <li><a href="tel:+551123063288"><i class="fa-solid fa-phone"></i> +55 11 2306-3288</a></li>
+                    <li><a href="https://wa.me/5511948368406" target="_blank"><i class="fa-brands fa-whatsapp"></i> +55 11 94836-8406</a></a></li>
+                    <li><a href="mailto:contato@kaits.com.br"><i class="fa-solid fa-envelope"></i> contato@kaits.com.br</a></li>
+                </ul>
+            </div>
+            <form id="formData" action="/connect.php" method="post">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+
+            <div class="overlay-img"></div>
+            <div id="resultado"></div>
+           
+        </section>
+    </main>
+    <footer>
+        <p>Kaits® | Todos os direitos reservados. </p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
